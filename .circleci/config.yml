@@ -19,3 +19,5 @@ jobs:
     steps:
       - checkout
       - run: echo "A first hello"
+      - run: curl https://install.meteor.com | /bin/sh
+      - run: meteor test --driver-package meteortesting:mocha
