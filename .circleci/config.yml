@@ -19,5 +19,4 @@ jobs:
     steps:
       - checkout
       - run: curl https://install.meteor.com | /bin/sh
-      - run: npm install -g spacejam
-      - run: spacejam test --driver-package meteortesting:mocha
+      - run: meteor npm test
