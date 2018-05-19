@@ -19,4 +19,5 @@ jobs:
     steps:
       - checkout
       - run: curl https://install.meteor.com | /bin/sh
+      - run: meteor npm install
       - run: meteor npm test
